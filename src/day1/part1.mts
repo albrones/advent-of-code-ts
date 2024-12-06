@@ -2,7 +2,6 @@ import { readFileSync } from 'fs';
 import * as R from 'remeda';
 
 const file = readFileSync('./input.txt', { encoding: 'utf8', flag: 'r' });
-const lines = R.pipe(file, R.split('\n'), R.dropLast(1));
 
 const sortedArrays = R.pipe(
   file,
